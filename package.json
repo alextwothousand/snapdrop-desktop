@@ -1,0 +1,42 @@
+{
+  "name": "snapdrop-desktop",
+  "version": "1.0.0",
+  "description": "A Snapdrop Desktop app written using Electron.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=snapdrop.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=snapdrop.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Snapdrop Desktop\"",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=snapdrop.ico --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infin1tyy/snapdrop-desktop.git"
+  },
+  "keywords": [
+    "snapdrop",
+    "snapdrop-desktop",
+    "macos",
+    "windows",
+    "linux",
+    "electron",
+    "electron-packager",
+    "airdrop",
+    "crossplatform",
+    "cross-platform",
+    "multiplatform",
+    "multi-platform"
+  ],
+  "author": "infin1tyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infin1tyy/snapdrop-desktop/issues"
+  },
+  "homepage": "https://github.com/infin1tyy/snapdrop-desktop#readme",
+  "dependencies": {
+    "electron": "^5.0.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^13.1.1"
+  }
+}
