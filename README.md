@@ -11,7 +11,7 @@ A Snapdrop Desktop app written using Electron.
 
 ## How to run from source:
 <strong>Ensure that you have NodeJS LTS installed.</strong><br>
-`git clone https://github.com/infin1tyy/snapdrop-desktop.git` then `npm install` followed by `npm start`. That's it!
+`git clone https://github.com/infin1tyy/snapdrop-desktop.git` then `npm install && npm start`. That's it!
 
 ## How to build from source:
 <strong>Ensure that you have NodeJS LTS installed.</strong><br>
