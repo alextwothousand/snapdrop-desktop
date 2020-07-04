@@ -1,5 +1,6 @@
 # snapdrop-desktop
 A Snapdrop Desktop app written using Electron.
+This readme.md is outdated, it will be updated once builds of the go-rewrite are ready to be released.
 
 ## How to:
 * Windows: Download the .exe and run it, head to C:/Program Files(x86)/Snapdrop Desktop and run the snapdrop-desktop.exe and thats it!
