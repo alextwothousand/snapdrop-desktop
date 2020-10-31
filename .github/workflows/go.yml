@@ -47,7 +47,7 @@ jobs:
         CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -o build/snapdrop-linux-amd64 main.go
 
     - name: Upload artifacts
-      uses: actions/upload-artifacts@v2
+      uses: actions/upload-artifact@v2
       with:
         name: snapdrop-linux-amd64
         path: build/snapdrop-linux-amd64
