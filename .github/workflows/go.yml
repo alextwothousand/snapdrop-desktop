@@ -40,8 +40,9 @@ jobs:
     
     - name: Install gtk and webkit
       run: |
-        sudo apt-get install webkitgtk -y
+        sudo apt-get install libwebkitgtk-dev libwebkitgtk-dev:i386 -y
 
     - name: Build
       run: |
         CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -o build/snapdrop-linux-amd64 main.go
+        CGO_ENABLED=1 GOOS=linux GOARCH=386 go build -o build/snapdrop-linux-amd64 main.go
