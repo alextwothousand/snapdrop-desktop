@@ -9,7 +9,7 @@ on:
 jobs:
 
   build:
-    name: Build
+    name: Linux amd64/i386
     runs-on: ubuntu-latest
     steps:
 
@@ -31,16 +31,16 @@ jobs:
 
     - name: Add i386 architecture
       run: |
-        dpkg --add-architecture i386
-        apt-get update -y
+        sudo dpkg --add-architecture i386
+        sudo apt-get update -y
 
     - name: Grab build-essential
-      run: apt-get install build-essential -y
+      run: sudo apt-get install build-essential -y
     
     - name: Install gtk and webkit
       run: |
-        apt-get install libgtk-3-0 libgtk-3-common libgtk-3-dev libgtk-3-bin libwebkit2gtk-3.0-25 libwebkit2gtk-3.0-dev -y
-        apt-get install libgtk-3-0:i386 libgtk-3-common:i386 libgtk-3-dev:i386 libgtk-3-bin:i386 libwebkit2gtk-3.0-25:i386 libwebkit2gtk-3.0-dev:i386 -y
+        sudo apt-get install libgtk-3-0 libgtk-3-common libgtk-3-dev libgtk-3-bin libwebkit2gtk-3.0-25 libwebkit2gtk-3.0-dev -y
+        sudo apt-get install libgtk-3-0:i386 libgtk-3-common:i386 libgtk-3-dev:i386 libgtk-3-bin:i386 libwebkit2gtk-3.0-25:i386 libwebkit2gtk-3.0-dev:i386 -y
 
     - name: Build
       run: |
