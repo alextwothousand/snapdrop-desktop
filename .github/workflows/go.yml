@@ -38,11 +38,6 @@ jobs:
       run: |
         sudo apt-get install build-essential -y
     
-    - name: Install gtk and webkit
-      run: |
-        sudo apt-get install python gir1.2-gtk-2.0 libpango1.0-dev libgdk-pixbuf2.0-dev:i386 -y
-        sudo apt-get install libgtk2.0-dev libgtk2.0-dev:i386 libwebkitgtk-dev libwebkitgtk-dev:i386 -y
-
     - name: Build
       run: |
         CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -o build/snapdrop-linux-amd64 main.go
